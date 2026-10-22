@@ -1,0 +1,16 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/cybera/integrations
+- https://n8n.io/integrations/cybera/
+- https://composio.dev/toolkits/cybera
+- https://monid.ai/tools/cybera
+checked:
+- https://composio.dev/toolkits/cybera
+- https://monid.ai/tools/cybera
+- https://n8n.io/integrations/cybera/
+- https://zapier.com/apps/cybera/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

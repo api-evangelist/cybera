@@ -1,23 +1,70 @@
 aid: cybera
+
 name: Cybera
-description: 'Cybera is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Cybera is a company identified in the API Evangelist secondary‑market harvest. Public information about its operations, products,
+  or services is limited, and no dedicated corporate website or official online presence could be located through standard web searches. The entry
+  remains a stub pending further discovery of verifiable sources.
+
 url: https://raw.githubusercontent.com/api-evangelist/cybera/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Technology
+- Platform
+- API
+- Data
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/cybera-vendors.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: Hosts
+  url: hosts/cybera-hosts.yml
 - type: Website
   url: https://www.nasdaqprivatemarket.com/
+- type: DomainSecurity
+  url: security/cybera-domain-security.yml
+
+apis:
+- name: Cybera API
+  description: Cybera provides AI‑powered mule intelligence and scam response solutions for financial institutions.
+  humanURL: https://www.cybera.io
+  baseURL: null
+  aid: cybera:cybera-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Main website renders content via JavaScript, and no machine‑readable OpenAPI or other contract was found despite probing common spec
+    URLs.
+  evidence:
+  - url: https://www.cybera.io
+    status: 200
+  checked: '2026-10-22'
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
